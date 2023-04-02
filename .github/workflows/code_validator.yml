@@ -6,7 +6,6 @@ permissions:
   contents: read
 
 jobs:
-  name: Code Analysis
   build:
     runs-on: ubuntu-latest
     steps:
