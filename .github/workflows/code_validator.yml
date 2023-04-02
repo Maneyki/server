@@ -18,11 +18,7 @@ jobs:
       - name: Black
         uses: psf/black@stable
         with:
-          safe: true
-          preview: ture
-          line-length: "121"
-          include: '\.pyi?$'
-          exclude: '\.git |\.__pycache__'
+          black_args: '--check --line-length=121 --include=".pyi?$" --exclude=".git | .__pycache__"'
       - name: Flake8
         uses: py-actions/flake8@v2
         with:
