@@ -7,11 +7,11 @@ This Repo contains all backend files of the project:<br>
 
 ### Requirements
 To work on this project, we assume you have:<br>
-- :white_check_mark: **[Python 3.10+](https://www.python.org/downloads/release/python-3100/)** installed<br>
+:white_check_mark: **[Python 3.10+](https://www.python.org/downloads/release/python-3100/)** installed<br>
 To verify the Python version, open a terminal window and run<br>
 `python --version`
 <br><br>
-- :white_check_mark: **[Docker](https://www.docker.com/products/docker-desktop/)** up and running<br>
+:white_check_mark: **[Docker](https://www.docker.com/products/docker-desktop/)** up and running<br>
 To verify Docker is correctly installed, open a terminal window and run<br>
 `docker --version`
 
