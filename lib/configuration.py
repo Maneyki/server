@@ -1,5 +1,7 @@
 import logging
+
 from dotenv import dotenv_values
+
 from lib.enums import DefaultConfig
 
 
@@ -13,7 +15,8 @@ class Configuration:
         logging.basicConfig(level=logging.INFO if _debug else logging.WARNING)
 
         logging.info(
-            f"{len([el for el in env_config.values() if el])} out of {env_config.__len__()} parameters successfully loaded. Using default variables for the remaining ones"
+            f"{len([el for el in env_config.values() if el])} out of {env_config.__len__()} parameters successfully"
+            " loaded. Using default variables for the remaining ones"
         )
         if not env_config.get("DB_PASSWORD") or env_config.get("DB_PASSWORD") == DefaultConfig.DB_PASSWORD:
             logging.warning("Using default database password")
